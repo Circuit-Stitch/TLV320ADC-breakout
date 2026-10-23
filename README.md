@@ -19,7 +19,7 @@ All other symbols and footprints come from the stock KiCad 10 libraries.
 | Header | Pins |
 |--------|------|
 | J1, power and control | 1 +5V, 2 +3V3, 3 GND, 4 SDA, 5 SCL, 6 SHDNZ, 7 GND, 8 GND |
-| J2, audio bus | 1 BCLK, 2 GND, 3 FSYNC, 4 GND, 5 SDOUT, 6 GND |
+| J2, audio bus | 1 FSYNC, 2 GND, 3 BCLK, 4 GND, 5 SDOUT, 6 GND |
 | J3–J6, line inputs CH1–CH4 | 1 CHx_IN_J+ (tip), 2 CHx_IN_J- (ring), 3 GND (sleeve) |
 
 Each input is balanced line level, wired straight to the ADC through its coupling caps. The ADC clips at about 2 Vrms differential, about +8 dBu. There is no phantom power and no phantom protection.
