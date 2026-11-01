@@ -35,7 +35,7 @@ The ADC side of each coupling cap is `CHx_IN+` or `CHx_IN-`. Each `+`/`-` pair r
 
 ## Changes from the BOM
 
-C10 and C11 ground to a separate AVSS net. NT1, a net tie, joins AVSS to GND. Place NT1 at U1 pin 4 and tie it to the thermal pad. The net tie keeps the C10 and C11 grounds off the plane, as the datasheet layout guidelines require.
+C10 and C11 ground to GND. Route each ground terminal straight to U1 pin 4 (AVSS), with no via, as the datasheet layout guidelines require.
 
 JP1 and JP2 are 3-pad solder jumpers. The BOM lists 2-pad jumpers. Pads 1–2 are bridged to GND by default, which gives I2C address 0x4C. To change the address, cut 1–2 and bridge 2–3 to IOVDD. A cut 2-pad jumper would leave the address pin floating.
 
