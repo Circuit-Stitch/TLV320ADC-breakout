@@ -2,7 +2,7 @@
 
 A four-channel, line-level ADC board built around the TI TLV320ADC6140. It is a KiCad 10 project.
 
-The board sends TDM audio out and is controlled over I2C. It connects to a Raspberry Pi Pico 2 by jumper wires. It was built as the real ADC for the RP2350 capture tests in [portacorder](https://github.com/Circuit-Stitch/portacorder), a portable 32-bit float recorder.
+The board sends TDM audio out and is controlled over I2C. It connects to a Raspberry Pi Pico 2 by jumper wires. It was built as the real ADC for the RP2350 capture tests in portacorder, a portable 32-bit float recorder.
 
 The parts and reference designators match `docs/bom.md`.
 
@@ -45,3 +45,9 @@ JP1 and JP2 are 3-pad solder jumpers. The BOM lists 2-pad jumpers. Pads 1–2 ar
 
 - Y1 uses the stock Abracon ASE footprint for 3.2 × 2.5 mm oscillators. Check its pads against the ASTX-H11 datasheet.
 - U1 uses the TI RTW footprint with thermal vias, `Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias`. The thermal pad is pin 25.
+
+## License
+
+The design is licensed under the CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W-2.0). See `LICENSE`.
+
+The PDFs in `datasheets/` belong to their manufacturers. The license does not cover them.
