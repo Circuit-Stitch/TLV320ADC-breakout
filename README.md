@@ -1,16 +1,23 @@
 # ADC breakout
 
-KiCad 10 project for the TLV320ADC6140 breakout board. This board is the real ADC for Stage 2 of `TEST_PLAN_MCU_CAPTURE.md`. It connects to a Pico 2 by jumper wires.
+A four-channel, line-level ADC board built around the TI TLV320ADC6140. It is a KiCad 10 project.
 
-The parts and reference designators match the "ADC breakout" section of `docs/bom.md`.
+The board sends TDM audio out and is controlled over I2C. It connects to a Raspberry Pi Pico 2 by jumper wires. It was built as the real ADC for the RP2350 capture tests in the `portable-float-recorder` project, which sits next to this repo in `~/Documents/Circuits/`.
+
+The parts and reference designators match `docs/bom.md`.
 
 ## Files
 
 - `adc-breakout.kicad_pro` is the project. Open it in KiCad.
 - `adc-breakout.kicad_sch` is the schematic.
+- `adc-breakout.kicad_pcb` is the 4-layer PCB.
 - `adc-breakout.pdf` is a PDF export of the schematic.
 - `pfr.kicad_sym` is the project symbol library. It holds the TLV320ADC6140 symbol. KiCad has no stock symbol for this part.
 - `sym-lib-table` adds `pfr.kicad_sym` to the project.
+- `gerbers/version 1/` holds the rev 1 fabrication files. `gerbers/version 1.zip` is the same set, zipped for upload.
+- `jlcpcb/` holds the JLCPCB assembly BOM and placement (CPL) files for rev 1.
+- `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
+- `datasheets/tlv320adc6140.pdf` is the ADC datasheet.
 
 All other symbols and footprints come from the stock KiCad 10 libraries.
 
@@ -32,7 +39,7 @@ C10 and C11 ground to a separate AVSS net. NT1, a net tie, joins AVSS to GND. Pl
 
 JP1 and JP2 are 3-pad solder jumpers. The BOM lists 2-pad jumpers. Pads 1–2 are bridged to GND by default, which gives I2C address 0x4C. To change the address, cut 1–2 and bridge 2–3 to IOVDD. A cut 2-pad jumper would leave the address pin floating.
 
-## Check before layout
+## Footprint checks
 
 - Y1 uses the stock Abracon ASE footprint for 3.2 × 2.5 mm oscillators. Check its pads against the ASTX-H11 datasheet.
 - U1 uses the TI RTW footprint with thermal vias, `Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias`. The thermal pad is pin 25.
