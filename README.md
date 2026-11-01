@@ -6,6 +6,10 @@ The board sends TDM audio out and is controlled over I2C. It connects to a Raspb
 
 The parts and reference designators match `docs/bom.md`.
 
+| Front | Back |
+|-------|------|
+| ![Rendered front of the ADC breakout PCB](images/adc-breakout_front.png) | ![Rendered back of the ADC breakout PCB](images/adc-breakout_back.png) |
+
 ## Files
 
 - `adc-breakout.kicad_pro` is the project. Open it in KiCad.
@@ -18,7 +22,9 @@ The parts and reference designators match `docs/bom.md`.
 - `jlcpcb/` holds the JLCPCB assembly BOM and placement (CPL) files for rev 1.
 - `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
 - `docs/oscillator-selection.md` compares the 24.576 MHz oscillators considered for Y1 and for portacorder Rev A.
+- `images/` holds the front and back board renders.
 - `datasheets/tlv320adc6140.pdf` is the ADC datasheet.
+- `datasheets/ASTX-H11.pdf` is the Y1 oscillator datasheet.
 - The other files in `datasheets/` are the oscillator datasheets cited in `docs/oscillator-selection.md`.
 
 All other symbols and footprints come from the stock KiCad 10 libraries.
@@ -43,7 +49,7 @@ JP1 and JP2 are 3-pad solder jumpers. The BOM lists 2-pad jumpers. Pads 1–2 ar
 
 ## Footprint checks
 
-- Y1 uses the stock Abracon ASE footprint for 3.2 × 2.5 mm oscillators. Check its pads against the ASTX-H11 datasheet.
+- Y1 uses the stock Abracon ASE footprint for 3.2 × 2.5 mm oscillators. Check its pads against the ASTX-H11 datasheet, `datasheets/ASTX-H11.pdf`.
 - U1 uses the TI RTW footprint with thermal vias, `Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias`. The thermal pad is pin 25.
 
 ## License
