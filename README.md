@@ -17,7 +17,9 @@ The parts and reference designators match `docs/bom.md`.
 - `gerbers/version 1/` holds the rev 1 fabrication files. `gerbers/version 1.zip` is the same set, zipped for upload.
 - `jlcpcb/` holds the JLCPCB assembly BOM and placement (CPL) files for rev 1.
 - `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
+- `docs/oscillator-selection.md` compares the 24.576 MHz oscillators considered for Y1 and for portacorder Rev A.
 - `datasheets/tlv320adc6140.pdf` is the ADC datasheet.
+- The other files in `datasheets/` are the oscillator datasheets cited in `docs/oscillator-selection.md`.
 
 All other symbols and footprints come from the stock KiCad 10 libraries.
 
