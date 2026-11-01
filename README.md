@@ -2,7 +2,7 @@
 
 A four-channel, line-level ADC board built around the TI TLV320ADC6140. It is a KiCad 10 project.
 
-The board sends TDM audio out and is controlled over I2C. It connects to a Raspberry Pi Pico 2 by jumper wires. It was built as the real ADC for the RP2350 capture tests in the `portable-float-recorder` project, which sits next to this repo in `~/Documents/Circuits/`.
+The board sends TDM audio out and is controlled over I2C. It connects to a Raspberry Pi Pico 2 by jumper wires. It was built as the real ADC for the RP2350 capture tests in [portacorder](https://github.com/Circuit-Stitch/portacorder), a portable 32-bit float recorder.
 
 The parts and reference designators match `docs/bom.md`.
 
