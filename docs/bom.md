@@ -39,6 +39,15 @@ Power comes from the Pico 2 header. 5 V feeds the AVDD regulator. The Pico 3.3 V
 
 Estimated parts cost at quantity 1 is about $18, before headers and the PCB. The ADC and oscillator are $11.90 of that. Capacitor prices come from the `warm-dimmer` and `optivisor_light` BOMs, checked 2026-10-07 to 2026-10-12.
 
+## Rev 1 as built
+
+JLCPCB assembled rev 1 from `jlcpcb/adc-breakout-bom.csv`. That BOM differs from the table above in two places:
+
+- FB1 is a Murata BLM18PG121SN1D, 120 Ω at 100 MHz.
+- C1, C2, C11, and C13 are 1 µF 50 V X5R 0603, LCSC C15849.
+
+`pcbway/adc-breakout-bom.csv` follows the table above.
+
 ## Input coupling capacitors
 
 TI recommends coupling capacitors with a low voltage coefficient. X7R capacitance changes with voltage and can add distortion. C0G holds its value, but no 1 µF C0G 1206 from TDK or Murata could be confirmed in stock. The Panasonic ECP-U1C105MA5 film part is obsolete.

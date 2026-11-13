@@ -6,9 +6,11 @@ The board sends TDM audio out and is controlled over I2C. It connects to a Raspb
 
 The parts and reference designators match `docs/bom.md`.
 
+The board is also a [PCBWay shared project](https://www.pcbway.com/project/shareproject/TLV320_ADC_breakout_33a37ab8.html). You can order it there with assembly.
+
 | Front | Back |
 |-------|------|
-| ![Rendered front of the ADC breakout PCB](images/adc-breakout_front.png) | ![Rendered back of the ADC breakout PCB](images/adc-breakout_back.png) |
+| ![Rendered front of the ADC breakout PCB](renders/adc-breakout_front.png) | ![Rendered back of the ADC breakout PCB](renders/adc-breakout_back.png) |
 
 ## Files
 
@@ -20,9 +22,10 @@ The parts and reference designators match `docs/bom.md`.
 - `sym-lib-table` adds `pfr.kicad_sym` to the project.
 - `gerbers/version 1/` holds the rev 1 fabrication files. `gerbers/version 1.zip` is the same set, zipped for upload.
 - `jlcpcb/` holds the JLCPCB assembly BOM and placement (CPL) files for rev 1.
+- `pcbway/` holds the assembly BOM, with manufacturer part numbers, and the centroid file for the PCBWay shared project.
 - `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
 - `docs/oscillator-selection.md` compares the 24.576 MHz oscillators considered for Y1 and for portacorder Rev A.
-- `images/` holds the front and back board renders.
+- `renders/` holds the front and back board renders and a STEP model of the assembled board.
 - `datasheets/tlv320adc6140.pdf` is the ADC datasheet.
 - `datasheets/ASTX-H11.pdf` is the Y1 oscillator datasheet.
 - The other files in `datasheets/` are the oscillator datasheets cited in `docs/oscillator-selection.md`.
