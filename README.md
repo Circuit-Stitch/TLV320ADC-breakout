@@ -20,6 +20,7 @@ The parts and reference designators match `docs/bom.md`.
 - `sym-lib-table` adds `pfr.kicad_sym` to the project.
 - `gerbers/version 1/` holds the rev 1 fabrication files. `gerbers/version 1.zip` is the same set, zipped for upload.
 - `jlcpcb/` holds the JLCPCB assembly BOM and placement (CPL) files for rev 1.
+- `pcbway/` holds a PCBWay assembly BOM, with manufacturer part numbers, and a centroid file. These have not been used for an order.
 - `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
 - `docs/oscillator-selection.md` compares the 24.576 MHz oscillators considered for Y1 and for portacorder Rev A.
 - `images/` holds the front and back board renders.
