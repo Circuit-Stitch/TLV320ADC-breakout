@@ -8,7 +8,7 @@ The parts and reference designators match `docs/bom.md`.
 
 | Front | Back |
 |-------|------|
-| ![Rendered front of the ADC breakout PCB](images/adc-breakout_front.png) | ![Rendered back of the ADC breakout PCB](images/adc-breakout_back.png) |
+| ![Rendered front of the ADC breakout PCB](renders/adc-breakout_front.png) | ![Rendered back of the ADC breakout PCB](renders/adc-breakout_back.png) |
 
 ## Files
 
@@ -23,7 +23,7 @@ The parts and reference designators match `docs/bom.md`.
 - `pcbway/` holds a PCBWay assembly BOM, with manufacturer part numbers, and a centroid file. These have not been used for an order.
 - `docs/bom.md` is the bill of materials, with prices, stock, and part notes.
 - `docs/oscillator-selection.md` compares the 24.576 MHz oscillators considered for Y1 and for portacorder Rev A.
-- `images/` holds the front and back board renders.
+- `renders/` holds the front and back board renders and a STEP model of the assembled board.
 - `datasheets/tlv320adc6140.pdf` is the ADC datasheet.
 - `datasheets/ASTX-H11.pdf` is the Y1 oscillator datasheet.
 - The other files in `datasheets/` are the oscillator datasheets cited in `docs/oscillator-selection.md`.
